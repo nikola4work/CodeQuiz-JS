@@ -18,39 +18,58 @@
     <div class="container" id="content">
 
         <!--JUMBOTRON HEADER-->
-        <div class="jumbotron">
-            <h1 id="header">Code Quiz</h1>
+        <div class="container" id="head">
+            <blink>
+                <h1 id="header">Code Quiz</h1>
+            </blink>
+
+
             <!--button to start-->
-            <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuiz">START QUIZ</button>
+            <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuiz">START THE QUIZ</button>
         </div>
+        <!--END OF JUMBOTRON-->
 
-        <!--Questions stored-->
-        <div class="question" id="questionBox">
+        <!--WRAPPER-->
+        <div class="container" id="quiz-wrapper">
 
-        </div>
+            <!--Questions stored-->
+            <div class="question" id="questionBox">
 
-        <!--Option buttons-->
-        <div class="options">
-            <ul id="ul">
-                <li id="op1" onclick="button(this)"></li>
-                <li id="op2" onclick="button(this)"></li>
-                <li id="op3" onclick="button(this)"></li>
-                <li id="op4" onclick="button(this)"></li>
-            </ul>
-        </div>
-        <!--Score-->
-        <div class="score">
-            <div class="next">
-                <button type="button" onclick="next()" id="button">Next</button>
             </div>
-            <div class="score-card">
-                Score : <span id="scoreCard">0</span>
+
+            <!--Option buttons-->
+            <div class="options">
+                <ul id="ul">
+                    <li id="op1" onclick="button(this)"></li>
+                    <li id="op2" onclick="button(this)"></li>
+                    <li id="op3" onclick="button(this)"></li>
+                    <li id="op4" onclick="button(this)"></li>
+                </ul>
             </div>
-            <!--End of Score-->
+
+            <!--Score-->
+            <div class="score">
+                <div class="next">
+                    <button type="button" onclick="next()" id="button">Next</button>
+                </div>
+                <div class="score-card">
+                    Score : <span id="scoreCard">0</span>
+                </div>
+
+                <!--End of Score-->
+            </div>
+        </div>
+        <!--END OF WRAPPER-->
+        <div id="footer">
+            &copy; Nikola Jovanovic HM4 Code Quiz
         </div>
         <!--END OF MAIN CONTAINER-->
     </div>
 
+
+
+    <!--JS LINK-->
+    <script src="./assets/JS/main.js"></script>
 </body>
 
 </html>

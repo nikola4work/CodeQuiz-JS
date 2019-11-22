@@ -2,13 +2,71 @@
     box-sizing: border-box;
 }
 
-.jumbotron {
-    background-color: #ffffff;
-    margin-top: -35px;
+body {
+    background-color: #0a000a;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat, repeat;
+}
+
+.head {
+    margin-top: -60px;
 }
 
 #header {
     text-align: center;
     font-size: 60px;
     padding: 20px;
+    margin-top: -20px;
+    color: #ffffff;
+}
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; // for Safari 4.0 - 8.0
+    animation: 2s linear infinite condemned_blink_effect;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+    // for Safari 4.0 - 8.0
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+#startQuiz {
+    margin-left: 300px;
+    width: 450px;
+}
+
+#quiz-wrapper {
+    -webkit-box-shadow: 5px 5px 28px 19px rgba(0, 0, 0, 0.54);
+    box-shadow: 5px 5px 28px 19px rgba(255, 255, 255, 0.54);
+    height: 400px;
+    width: 650px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+#footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
 }
