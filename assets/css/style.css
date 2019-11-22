@@ -5,7 +5,13 @@
 body {
     background-image: url("../images/Screen\ Shot\ 2015-12-08\ at\ 12.31.59\ pm.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-color: #C8C8C5;
+}
+
+#content {
+    margin: 20px;
+    margin-left: 100px;
 }
 
 .head {
@@ -140,7 +146,7 @@ body {
 #footer {
     text-align: center;
     color: black;
-    margin-top: 30px;
+    margin-top: 41px;
     font-size: 25px;
     ;
 }
