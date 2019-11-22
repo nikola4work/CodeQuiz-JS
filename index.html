@@ -14,9 +14,41 @@
 </head>
 
 <body>
+    <!--MAIN CONTAINER-->
+    <div class="container" id="content">
 
-    <div class="jumbotron">
-        <h1 id="header">Code Quiz</h1>
+        <!--JUMBOTRON HEADER-->
+        <div class="jumbotron">
+            <h1 id="header">Code Quiz</h1>
+            <!--button to start-->
+            <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuiz">START QUIZ</button>
+        </div>
+
+        <!--Questions stored-->
+        <div class="question" id="questionBox">
+
+        </div>
+
+        <!--Option buttons-->
+        <div class="options">
+            <ul id="ul">
+                <li id="op1" onclick="button(this)"></li>
+                <li id="op2" onclick="button(this)"></li>
+                <li id="op3" onclick="button(this)"></li>
+                <li id="op4" onclick="button(this)"></li>
+            </ul>
+        </div>
+        <!--Score-->
+        <div class="score">
+            <div class="next">
+                <button type="button" onclick="next()" id="button">Next</button>
+            </div>
+            <div class="score-card">
+                Score : <span id="scoreCard">0</span>
+            </div>
+            <!--End of Score-->
+        </div>
+        <!--END OF MAIN CONTAINER-->
     </div>
 
 </body>

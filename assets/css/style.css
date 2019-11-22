@@ -4,9 +4,11 @@
 
 .jumbotron {
     background-color: #ffffff;
+    margin-top: -35px;
 }
 
 #header {
     text-align: center;
     font-size: 60px;
+    padding: 20px;
 }
