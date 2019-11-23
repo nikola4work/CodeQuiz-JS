@@ -29,5 +29,30 @@ var app = {
             options: ["h4", "h1", "h8", "h9"],
             answer: 2
         }
-    ]
+    ],
+
+
+
+    index: 0,
+
+    load: function({
+            if (this.index <= this.questions.length - 1) {
+                quizBox.innerHTML = this.index + 1 + "." + this.questions[this.index].q;
+                op1.innerHTML = this.question[this.index].options[0];
+                op2.innerHTML = this.question[this.index].options[1];
+                op3.innerHTML = this.question[this.index].options[2];
+                op4.innerHTML = this.question[this.index].options[3];
+
+                this.scoreCard();
+
+            } else {
+                quizBox.innerHTML = "Quiz Over......!!!"
+                op1.style.display = "none";
+                op2.style.display = "none";
+                op3.style.display = "none";
+                op4.style.display = "none";
+                btn.style.display = "none";
+            }
+        }
+    })
 };
