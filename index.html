@@ -1,39 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Calistoga|Notable&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Notable&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Monoton|Notable&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Merienda|Monoton|Notable&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Merienda|Monoton|Notable|Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Notable&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Notable&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Monoton|Notable&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Merienda|Monoton|Notable&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Calistoga|Merienda|Monoton|Notable|Rock+Salt&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet" />
 
     <title>Code Quiz By Niko</title>
 </head>
 
 <body>
-
-
-
-
     <!--MAIN CONTAINER-->
     <div class="container" id="content">
-
         <!--USER INSTRUCTIONS DIV-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
-
                     <button class="toggle">User Instructions</button>
                     <div id="target">
                         <ul>
@@ -48,24 +41,21 @@
         </div>
         <!--END OF USER INSTRUCTIONS DIV-->
 
-
         <!--TITLE-->
         <div class="container" id="head">
-
             <h1 id="header">Code Quiz</h1>
         </div>
         <!--END OF TITLE-->
 
         <!--button to start-->
-        <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuizBtn">START THE QUIZ</button>
+        <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuizBtn">
+        START THE QUIZ
+      </button>
 
         <!--WRAPPER-->
         <div class="container" id="quiz-wrapper">
-
             <!--Questions stored-->
-            <div class="question" id="questionBox">
-
-            </div>
+            <div class="question" id="questionBox"></div>
 
             <!--Option buttons-->
             <div class="options">
@@ -82,39 +72,27 @@
                 <div class="next">
                     <button type="button" onclick="next()" id="button">Next</button>
                 </div>
-                <div class="score-card">
-                    Score : <span id="scoreCard">0</span>
-                </div>
 
-
-
-
+                <div class="score-card">Score : <span id="scoreCard">0</span></div>
 
                 <div id="main">
-                    TIME LEFT:
-                    <p class="time">
-
-                        <p>
+                    TIMMER:
+                    <span id="count">20</span> Seconds
                 </div>
 
                 <!--End of Score-->
             </div>
-
         </div>
         <!--END OF WRAPPER-->
 
         <div id="footer">
             &copy; Nikola Jovanovic HM4 Code Quiz
-
         </div>
         <!--END OF MAIN CONTAINER-->
     </div>
 
-
-
     <!--JS LINK-->
     <script src="./assets/JS/main.js"></script>
-
 </body>
 
 </html>

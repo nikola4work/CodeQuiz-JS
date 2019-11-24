@@ -1,51 +1,82 @@
-var ul = document.getElementById('ul');
-var btn = document.getElementById('button');
-var scoreCard = document.getElementById('scoreCard');
-var quizBox = document.getElementById('questionBox');
-var op1 = document.getElementById('op1');
-var op2 = document.getElementById('op2');
-var op3 = document.getElementById('op3');
-var op4 = document.getElementById('op4');
-var timeEl = document.querySelector(".time");
+var ul = document.getElementById("ul");
+var btn = document.getElementById("button");
+var scoreCard = document.getElementById("scoreCard");
+var quizBox = document.getElementById("questionBox");
+var op1 = document.getElementById("op1");
+var op2 = document.getElementById("op2");
+var op3 = document.getElementById("op3");
+var op4 = document.getElementById("op4");
 var mainEl = document.getElementById("main");
 
-var secondsLeft = 60;
-
-
-
-
-function setTime() {
-    var timerInterval = setInterval(function() {
-        secondsLeft--;
-        timeEl.textContent = secondsLeft;
-
-        if (secondsLeft === 0) {
-            clearInterval(timerInterval);
-            sendMessage();
-        }
-
-    }, 1000);
-}
-
-function sendMessage() {
-    timeEl.textContent = " ";
-
-}
-
-setTime();
+$(".Show").click(function() {
+    $("#target").show(500);
+    $(".Show").hide(0);
+    $(".Hide").show(0);
+});
+$(".Hide").click(function() {
+    $("#target").hide(500);
+    $(".Show").show(0);
+    $(".Hide").hide(0);
+});
+$(".toggle").click(function() {
+    $("#target").toggle("slow");
+});
 
 var app = {
-    questions: [
-        { q: 'HTML stands for?', options: ['Hyper Text Markup Language', 'High Text Markup Language', 'Hyper Tabular Markup Language', 'None of these are correct'], answer: 1 },
+    questions: [{
+            q: "HTML stands for?",
+            options: [
+                "Hyper Text Markup Language",
+                "High Text Markup Language",
+                "Hyper Tabular Markup Language",
+                "None of these are correct"
+            ],
+            answer: 1
+        },
 
-        { q: 'which of the following tag is used to mark a begining of paragraph ?', options: ['TD', 'br', 'P', 'tr'], answer: 3 },
+        {
+            q: "which of the following tag is used to mark a begining of paragraph ?",
+            options: ["TD", "br", "P", "tr"],
+            answer: 3
+        },
 
-        { q: 'Correct HTML tag for the largest heading is ?', options: ['h4', 'h1', 'h8', 'h9'], answer: 2 },
+        {
+            q: "Correct HTML tag for the largest heading is ?",
+            options: ["h4", "h1", "h8", "h9"],
+            answer: 2
+        },
 
-        { q: ' "What does CSS stands for?', options: ['cascading style sheets', 'cascading style source', 'cascading source style', 'none of the above'], answer: 1 },
+        {
+            q: ' "What does CSS stands for?',
+            options: [
+                "cascading style sheets",
+                "cascading style source",
+                "cascading source style",
+                "none of the above"
+            ],
+            answer: 1
+        },
 
-        { q: 'What does JS stands for?', options: ['None of the above', 'JavaScript', 'Java Language', 'Programing language'], answer: 2 },
-        { q: 'What does DOM stands for?', options: ['DoomsDay', 'Type of Champagne', 'Nothing at all', 'Document Object Model '], answer: 4 }
+        {
+            q: "What does JS stands for?",
+            options: [
+                "None of the above",
+                "JavaScript",
+                "Java Language",
+                "Programing language"
+            ],
+            answer: 2
+        },
+        {
+            q: "What does DOM stands for?",
+            options: [
+                "DoomsDay",
+                "Type of Champagne",
+                "Nothing at all",
+                "Document Object Model "
+            ],
+            answer: 4
+        }
     ],
     index: 0,
     load: function() {
@@ -57,8 +88,7 @@ var app = {
             op4.innerHTML = this.questions[this.index].options[3];
             this.scoreCard();
         } else {
-
-            quizBox.innerHTML = "Quiz Over!!!"
+            quizBox.innerHTML = "Quiz Over!!!";
             op1.style.display = "none";
             op2.style.display = "none";
             op3.style.display = "none";
@@ -71,8 +101,7 @@ var app = {
         this.load();
     },
     check: function(ele) {
-
-        var id = ele.id.split('');
+        var id = ele.id.split("");
 
         if (id[id.length - 1] == this.questions[this.index].answer) {
             this.score++;
@@ -93,17 +122,14 @@ var app = {
     clickAble: function() {
         for (let i = 0; i < ul.children.length; i++) {
             ul.children[i].style.pointerEvents = "auto";
-            ul.children[i].className = ''
-
+            ul.children[i].className = "";
         }
     },
     score: 0,
     scoreCard: function() {
         scoreCard.innerHTML = this.questions.length + "/" + this.score;
     }
-
-}
-
+};
 
 window.onload = app.load();
 
@@ -117,19 +143,21 @@ function next() {
     app.clickAble();
 }
 
+// HIDDEN DIV JQUERY
 
-// user instructions
+// TIMMER BUTTON
 
-$('.Show').click(function() {
-    $('#target').show(500);
-    $('.Show').hide(0);
-    $('.Hide').show(0);
-});
-$('.Hide').click(function() {
-    $('#target').hide(500);
-    $('.Show').show(0);
-    $('.Hide').hide(0);
-});
-$('.toggle').click(function() {
-    $('#target').toggle('slow');
+$("#startQuizBtn").click(function() {
+    var counter = 20;
+    setInterval(function() {
+        counter--;
+        if (counter >= 0) {
+            span = document.getElementById("count");
+            span.innerHTML = counter;
+        }
+        if (counter === 0) {
+            alert("sorry, out of time");
+            clearInterval(counter);
+        }
+    }, 1000);
 });
