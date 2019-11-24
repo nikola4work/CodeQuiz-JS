@@ -206,135 +206,144 @@ body {
     font-family: "Bangers", cursive;
 }
 
-@media screen and (max-width: 1125px) {
-    #startQuizBtn {
-        margin-left: 250px;
-    }
-}
 
-@media screen and (max-width: 1121px) {
+/* Media Query */
+
+@media only screen and (max-width: 1125px) {
     #startQuizBtn {
         margin-left: 230px;
     }
+    #target {
+        margin-left: -20px;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #startQuizBtn {
+        margin-left: 230px;
+    }
+    #target {
+        margin-left: -20px;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #startQuizBtn {
+        margin-left: 130px;
+    }
+    #target {
+        margin-left: -20px;
+        margin-left: 200px;
+    }
+    .toggle {
+        margin-left: -30px;
+    }
     body {
+        background-image: url("../images/4.4.jpeg");
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: -80px;
         background-image: url("../images/1.1.jpeg");
         background-size: cover;
     }
-}
-
-@media screen and (max-width: 989px) {
     #startQuizBtn {
-        margin-left: 105px;
+        margin-left: 130px;
+    }
+    #target {
+        margin-left: -20px;
+        margin-left: 200px;
+    }
+    #footer {
+        color: #ffffff;
     }
 }
 
-@media screen and (max-width: 763px) {
-    #startQuizBtn {
-        margin-left: 40px;
-    }
+@media screen and (max-width: 736px) {
     body {
+        margin-left: -10px;
         background-image: url("../images/2.2.png");
         background-size: cover;
     }
+    .score-card {
+        margin-left: 10px;
+    }
+    #main {
+        margin-top: -100px;
+    }
+    #startQuizBtn {
+        margin-left: 50px;
+    }
     .toggle {
-        margin-left: -32px;
+        margin-left: -40px;
     }
     #target {
-        margin-left: 70px;
+        margin-left: -10px;
+        margin-left: 100px;
+        color: #ffffff;
     }
 }
 
-@media screen and (max-width: 724px) {
-    #startQuizBtn {
-        margin-left: 25px;
-    }
-}
-
-@media screen and (max-width: 673px) {
-    #quiz-wrapper {
-        margin-left: -27px;
-    }
-}
-
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 460px) {
     body {
         background-image: url("../images/3.3.jpg");
-        background-size: cover;
     }
-}
-
-@media screen and (max-width: 621px) {
-    body {
-        background-image: url("../images/1_3KBNOqAa90ESsLZ6bnQVHg.png");
-        background-size: cover;
+    .toggle {
+        margin-left: -115px;
     }
-}
-
-@media screen and (max-width: 645px) {
-    #quiz-wrapper {
-        margin-left: -80px;
+    #target {
+        margin-left: -38px;
+        color: black;
     }
     #header {
-        margin-left: -180px;
+        margin-left: -130px;
     }
     #startQuizBtn {
+        margin-left: -40px;
+        width: 400px;
+    }
+    #quiz-wrapper {
+        width: 425px;
         margin-left: -55px;
     }
     #footer {
-        margin-left: -150px;
-    }
-    .next {
-        margin-right: 10px;
-        margin-bottom: 7px;
+        font-size: 20px;
+        margin-left: -500px;
     }
     #button {
-        font-size: 14px;
-    }
-    .toggle {
-        margin-left: -120px;
-    }
-    #target {
-        margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    #quiz-wrapper {
-        margin-left: -100px;
-    }
-    #footer {
-        margin-left: -200px;
-    }
-    .score {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 445px) {
-    #quiz-wrapper {
-        width: 460px;
-        margin-left: -120px;
-    }
-    #footer {
-        margin-left: -200px;
-    }
-    .score {
-        font-size: 10px;
-    }
-    #header {
-        margin-left: -200px;
-    }
-    #startQuizBtn {
-        margin-left: -130px;
-    }
-    .toggle {
-        margin-left: -150px;
-    }
-    #target {
-        margin-left: -120px;
+        width: 10px;
     }
     #main {
-        margin-top: -45px;
-        font-size: 25px;
+        font-size: 20px;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        margin-left: -60px;
+    }
+    #startQuizBtn {
+        margin-left: -37px;
+        width: 275px;
+    }
+    #footer {
+        display: none;
+    }
+    #quiz-wrapper {
+        margin-top: 75px;
+        width: 315px;
+        margin-left: -55px;
+        height: auto;
+    }
+    #main {
+        position: absolute;
+        top: 60%;
+        margin-left: 20px;
     }
 }
