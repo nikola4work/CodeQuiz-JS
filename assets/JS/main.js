@@ -10,7 +10,7 @@ var op4 = document.getElementById('op4');
 
 var app = {
     questions: [
-        { q: 'HTML stands for?', options: ['Hyper Text Markup Language', 'High Text Markup Language', 'Hyper Tabular Markup Language', 'None of these'], answer: 1 },
+        { q: 'HTML stands for?', options: ['Hyper Text Markup Language', 'High Text Markup Language', 'Hyper Tabular Markup Language', 'None of these are correct'], answer: 1 },
 
         { q: 'which of the following tag is used to mark a begining of paragraph ?', options: ['TD', 'br', 'P', 'tr'], answer: 3 },
 
@@ -89,4 +89,15 @@ function button(ele) {
 function next() {
     app.next();
     app.clickAble();
+}
+
+// user instructions
+
+function hiddenDiv() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
