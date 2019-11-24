@@ -6,7 +6,33 @@ var op1 = document.getElementById('op1');
 var op2 = document.getElementById('op2');
 var op3 = document.getElementById('op3');
 var op4 = document.getElementById('op4');
+var timeEl = document.querySelector(".time");
+var mainEl = document.getElementById("main");
 
+var secondsLeft = 60;
+
+
+
+
+function setTime() {
+    var timerInterval = setInterval(function() {
+        secondsLeft--;
+        timeEl.textContent = secondsLeft;
+
+        if (secondsLeft === 0) {
+            clearInterval(timerInterval);
+            sendMessage();
+        }
+
+    }, 1000);
+}
+
+function sendMessage() {
+    timeEl.textContent = " ";
+
+}
+
+setTime();
 
 var app = {
     questions: [
@@ -91,13 +117,19 @@ function next() {
     app.clickAble();
 }
 
+
 // user instructions
 
-function hiddenDiv() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+$('.Show').click(function() {
+    $('#target').show(500);
+    $('.Show').hide(0);
+    $('.Hide').show(0);
+});
+$('.Hide').click(function() {
+    $('#target').hide(500);
+    $('.Show').show(0);
+    $('.Hide').hide(0);
+});
+$('.toggle').click(function() {
+    $('#target').toggle('slow');
+});
