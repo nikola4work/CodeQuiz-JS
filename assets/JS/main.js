@@ -8,20 +8,6 @@ var op3 = document.getElementById("op3");
 var op4 = document.getElementById("op4");
 var mainEl = document.getElementById("main");
 
-$(".Show").click(function() {
-    $("#target").show(500);
-    $(".Show").hide(0);
-    $(".Hide").show(0);
-});
-$(".Hide").click(function() {
-    $("#target").hide(500);
-    $(".Show").show(0);
-    $(".Hide").hide(0);
-});
-$(".toggle").click(function() {
-    $("#target").toggle("slow");
-});
-
 var app = {
     questions: [{
             q: "HTML stands for?",
@@ -47,7 +33,7 @@ var app = {
         },
 
         {
-            q: ' "What does CSS stands for?',
+            q: " What does CSS stands for?",
             options: [
                 "cascading style sheets",
                 "cascading style source",
@@ -145,6 +131,20 @@ function next() {
 
 // HIDDEN DIV JQUERY
 
+$(".Show").click(function() {
+    $("#target").show(500);
+    $(".Show").hide(0);
+    $(".Hide").show(0);
+});
+$(".Hide").click(function() {
+    $("#target").hide(500);
+    $(".Show").show(0);
+    $(".Hide").hide(0);
+});
+$(".toggle").click(function() {
+    $("#target").toggle("medium");
+});
+
 // TIMMER BUTTON
 
 $("#startQuizBtn").click(function() {
@@ -156,7 +156,6 @@ $("#startQuizBtn").click(function() {
             span.innerHTML = counter;
         }
         if (counter === 0) {
-            alert("sorry, out of time");
             clearInterval(counter);
         }
     }, 1000);
