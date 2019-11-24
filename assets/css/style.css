@@ -301,20 +301,20 @@ body {
         color: black;
     }
     #header {
-        margin-left: -190px;
+        margin-left: -165px;
         font-size: 50px;
     }
     #startQuizBtn {
-        margin-left: -90px;
+        margin-left: -80px;
         width: 400px;
     }
     #quiz-wrapper {
         width: 425px;
-        margin-left: -95px;
+        margin-left: -80px;
     }
     #footer {
         font-size: 20px;
-        margin-left: -450px;
+        margin-left: -550px;
     }
     #button {
         width: 10px;
