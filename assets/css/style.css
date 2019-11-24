@@ -294,26 +294,27 @@ body {
         background-image: url("../images/3.3.jpg");
     }
     .toggle {
-        margin-left: -115px;
+        margin-left: -140px;
     }
     #target {
-        margin-left: -38px;
+        margin-left: -58px;
         color: black;
     }
     #header {
-        margin-left: -130px;
+        margin-left: -190px;
+        font-size: 50px;
     }
     #startQuizBtn {
-        margin-left: -40px;
+        margin-left: -90px;
         width: 400px;
     }
     #quiz-wrapper {
         width: 425px;
-        margin-left: -55px;
+        margin-left: -95px;
     }
     #footer {
         font-size: 20px;
-        margin-left: -500px;
+        margin-left: -450px;
     }
     #button {
         width: 10px;
@@ -325,25 +326,22 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    body {
-        margin-left: -60px;
-    }
     #startQuizBtn {
-        margin-left: -37px;
+        margin-left: -50px;
         width: 275px;
     }
     #footer {
         display: none;
     }
     #quiz-wrapper {
-        margin-top: 75px;
+        margin-top: 65px;
         width: 315px;
         margin-left: -55px;
         height: auto;
     }
     #main {
         position: absolute;
-        top: 60%;
+        top: 65%;
         margin-left: 20px;
     }
 }
