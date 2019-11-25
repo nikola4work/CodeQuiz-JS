@@ -3,9 +3,9 @@
 }
 
 body {
-    background-image: url("../images/Screen\ Shot\ 2015-12-08\ at\ 12.31.59\ pm.png");
+    background-image: url("../images/background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-color: #c8c8c5;
 }
 
@@ -66,6 +66,7 @@ body {
     border-radius: 15px;
     margin-top: 30px;
     padding: 40px;
+    display: none;
 }
 
 #quiz-wrapper .question {
@@ -241,7 +242,7 @@ body {
         margin-left: -30px;
     }
     body {
-        background-image: url("../images/4.4.jpeg");
+        background-image: url("../images/second\ large.png");
         background-size: cover;
     }
 }
@@ -249,7 +250,7 @@ body {
 @media screen and (max-width: 768px) {
     body {
         margin-left: -80px;
-        background-image: url("../images/1.1.jpeg");
+        background-image: url("../images/third\ large.jpg");
         background-size: cover;
     }
     #startQuizBtn {
@@ -267,7 +268,7 @@ body {
 @media screen and (max-width: 736px) {
     body {
         margin-left: -10px;
-        background-image: url("../images/2.2.png");
+        background-image: url("../images/fifth\ .jpeg");
         background-size: cover;
     }
     .score-card {
@@ -291,7 +292,8 @@ body {
 
 @media screen and (max-width: 460px) {
     body {
-        background-image: url("../images/3.3.jpg");
+        background-image: url("../images/fourth\ large.png");
+        background-size: cover;
     }
     .toggle {
         margin-left: -140px;
@@ -313,8 +315,7 @@ body {
         margin-left: -80px;
     }
     #footer {
-        font-size: 20px;
-        margin-left: -550px;
+        display: none;
     }
     #button {
         width: 10px;
@@ -327,8 +328,9 @@ body {
 
 @media screen and (max-width: 320px) {
     #startQuizBtn {
-        margin-left: -50px;
+        margin-left: -80px;
         width: 275px;
+        font-size: 18px;
     }
     #footer {
         display: none;
@@ -343,5 +345,9 @@ body {
         position: absolute;
         top: 65%;
         margin-left: 20px;
+    }
+    #header {
+        font-size: 40px;
+        letter-spacing: 0px;
     }
 }

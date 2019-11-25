@@ -21,9 +21,9 @@ var app = {
         },
 
         {
-            q: "which of the following tag is used to mark a begining of paragraph ?",
-            options: ["TD", "br", "P", "tr"],
-            answer: 3
+            q: "What does p tag stands for?",
+            options: ["Paragraph", "Parking", "People", "None of the above"],
+            answer: 1
         },
 
         {
@@ -129,7 +129,7 @@ function next() {
     app.clickAble();
 }
 
-// HIDDEN DIV JQUERY
+// HIDEN DIV INSTRUCTIONS
 
 $(".Show").click(function() {
     $("#target").show(500);
@@ -145,6 +145,22 @@ $(".toggle").click(function() {
     $("#target").toggle("medium");
 });
 
+// HIDEN WRAPPER
+
+$(".Show").click(function() {
+    $("#quiz-wrapper").show(500);
+    $(".Show").hide(0);
+    $(".Hide").show(0);
+});
+$(".Hide").click(function() {
+    $("#quiz-wrapper").hide(500);
+    $(".Show").show(0);
+    $(".Hide").hide(0);
+});
+$(".btn").click(function() {
+    $("#quiz-wrapper").toggle("medium");
+});
+
 // TIMMER BUTTON
 
 $("#startQuizBtn").click(function() {
@@ -157,6 +173,12 @@ $("#startQuizBtn").click(function() {
         }
         if (counter === 0) {
             clearInterval(counter);
+            quizBox.innerHTML = "Quiz Over,You Run Out Of Time!!!";
+            op1.style.display = "none";
+            op2.style.display = "none";
+            op3.style.display = "none";
+            op4.style.display = "none";
+            btn.style.display = "none";
         }
     }, 1000);
 });
