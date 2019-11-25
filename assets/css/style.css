@@ -43,8 +43,11 @@ body {
 }
 
 #target {
+    padding-top: 10px;
     margin-left: 350px;
     display: none;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 #startQuizBtn {
@@ -244,6 +247,7 @@ body {
     body {
         background-image: url("../images/second\ large.png");
         background-size: cover;
+        background-color: #7d8290;
     }
 }
 
