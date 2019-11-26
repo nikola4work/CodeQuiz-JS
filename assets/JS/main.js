@@ -8,6 +8,8 @@ var op3 = document.getElementById("op3");
 var op4 = document.getElementById("op4");
 var mainEl = document.getElementById("main");
 
+var isQuizDone = false;
+
 var app = {
     questions: [{
             q: "HTML stands for?",
@@ -75,6 +77,7 @@ var app = {
             this.scoreCard();
         } else {
             quizBox.innerHTML = "Quiz Over!!!";
+            isQuizDone = true;
             op1.style.display = "none";
             op2.style.display = "none";
             op3.style.display = "none";
@@ -131,54 +134,45 @@ function next() {
 
 // HIDEN DIV INSTRUCTIONS
 
-$(".Show").click(function() {
-    $("#target").show(500);
-    $(".Show").hide(0);
-    $(".Hide").show(0);
-});
-$(".Hide").click(function() {
-    $("#target").hide(500);
-    $(".Show").show(0);
-    $(".Hide").hide(0);
-});
 $(".toggle").click(function() {
     $("#target").toggle("medium");
 });
 
 // HIDEN WRAPPER
 
-$(".Show").click(function() {
-    $("#quiz-wrapper").show(500);
-    $(".Show").hide(0);
-    $(".Hide").show(0);
-});
-$(".Hide").click(function() {
-    $("#quiz-wrapper").hide(500);
-    $(".Show").show(0);
-    $(".Hide").hide(0);
-});
 $(".btn").click(function() {
     $("#quiz-wrapper").toggle("medium");
+    startQuizBtn.style.display = "none";
 });
 
 // TIMMER BUTTON
 
 $("#startQuizBtn").click(function() {
-    var counter = 20;
-    setInterval(function() {
+    var counter = 30;
+    var myInterval = setInterval(function() {
         counter--;
+        if (isQuizDone) {
+            clearInterval(myInterval);
+        }
+
         if (counter >= 0) {
             span = document.getElementById("count");
             span.innerHTML = counter;
         }
         if (counter === 0) {
-            clearInterval(counter);
             quizBox.innerHTML = "Quiz Over,You Run Out Of Time!!!";
             op1.style.display = "none";
             op2.style.display = "none";
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
+            startQuizBtn.style.display = "none";
         }
     }, 1000);
 });
+
+// PLAY AGAIN BUTTON
+
+function playAgain() {
+    location.reload();
+}

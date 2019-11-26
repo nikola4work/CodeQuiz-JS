@@ -131,18 +131,8 @@ body {
     box-shadow: 0px 3px 0px #cb0b0b;
 }
 
-#quiz-wrapper .score {
-    float: left;
-    width: 100%;
-    padding: 25px 0px;
-}
-
-#quiz-wrapper .score .next {
-    width: 40%;
-    float: left;
-}
-
-#quiz-wrapper .score .next button {
+#button {
+    margin-top: 20px;
     padding: 10px 80px;
     color: white;
     background-color: blue;
@@ -158,37 +148,33 @@ body {
     font-family: "Bangers", cursive;
 }
 
-#quiz-wrapper .score .next button:active {
-    box-shadow: 0px 3px 0px transparent;
-}
-
-#quiz-wrapper .score .score-card {
-    width: 60%;
-    float: left;
-}
-
 .score-card {
     color: white;
     font-family: "Acme", sans-serif;
 }
 
-#quiz-wrapper .score .score-card {
-    font-size: 20px;
-    color: black;
-    line-height: 50px;
-    text-transform: uppercase;
+#scoreCard {
+    color: white;
+    font-family: "Acme", sans-serif;
 }
 
-#quiz-wrapper .score .score-card span {
+#quiz-wrapper .score-card {
+    color: red;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
     background-color: #0000ff;
     padding: 5px 20px;
     border-radius: 8px;
     color: #ffffff;
+    text-align: center;
 }
 
 #main {
-    float: right;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 100px;
     padding: 10px;
     font-size: 25px;
     font-family: "Acme", sans-serif;
@@ -196,8 +182,19 @@ body {
     border-radius: 8px;
 }
 
-.score {
-    float: left;
+#playAgain {
+    margin-top: 20px;
+    background-color: #c72332;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 213px;
+    font-family: "Calistoga", cursive;
+    font-family: "Notable", sans-serif;
+    font-family: "Bangers", cursive;
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+    margin-left: 12px;
 }
 
 #footer {

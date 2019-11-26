@@ -32,9 +32,9 @@
                     <div id="target">
                         <ul>
                             <li>Click RED button to start the countdown</li>
-                            <li>User have 20 seconds to answer all the questions</li>
-                            <li>When finished score will be displayed</li>
-                            <li>Click on repeat button to play again</li>
+                            <li>User have 30 seconds to answer all the questions</li>
+                            <li>You can track your score while playing</li>
+                            <li>Click on "Play Again - Start quiz" button to play again</li>
                         </ul>
                     </div>
                     <!--END OF HIDEN DIV-->
@@ -69,23 +69,42 @@
                 </ul>
             </div>
 
-            <!--Score-->
-            <div class="score">
-                <div class="next">
-                    <button type="button" onclick="next()" id="button">Next</button>
+            <!--Score, timer, next,play again-->
+
+            <div class="container" id="controls">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="next">
+                            <button type="button" onclick="next()" id="button">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="score-card">
+                            Score : <span id="scoreCard">0</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <button id="playAgain" onclick="playAgain()">Play Again</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="main">
+                                TIMER:
+                                <span id="count">30</span> Seconds
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="score-card">Score : <span id="scoreCard">0</span></div>
-
-                <div id="main">
-                    TIMER:
-                    <span id="count">20</span> Seconds
-                </div>
-
-                <!--End of Score-->
+                <!--End of Score, timer, next,play again-->
             </div>
         </div>
-        <!--END OF WRAPPER-->
+        <!--END OF container-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -96,10 +115,10 @@
             </div>
         </div>
         <!--END OF MAIN CONTAINER-->
-    </div>
 
-    <!--JS LINK-->
-    <script src="./assets/JS/main.js"></script>
+
+        <!--JS LINK-->
+        <script src="./assets/JS/main.js"></script>
 </body>
 
 </html>
