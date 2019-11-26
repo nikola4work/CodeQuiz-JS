@@ -148,7 +148,7 @@ $(".btn").click(function() {
 // TIMMER BUTTON
 
 $("#startQuizBtn").click(function() {
-    var counter = 30;
+    var counter = 30000;
     var myInterval = setInterval(function() {
         counter--;
         if (isQuizDone) {

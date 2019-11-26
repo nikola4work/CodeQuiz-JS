@@ -148,20 +148,10 @@ body {
     font-family: "Bangers", cursive;
 }
 
-.score-card {
-    color: white;
-    font-family: "Acme", sans-serif;
-}
-
-#scoreCard {
-    color: white;
-    font-family: "Acme", sans-serif;
-}
-
 #quiz-wrapper .score-card {
     color: red;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 20px;
     line-height: 40px;
     text-transform: uppercase;
@@ -170,6 +160,10 @@ body {
     border-radius: 8px;
     color: #ffffff;
     text-align: center;
+    color: white;
+    font-family: "Calistoga", cursive;
+    font-family: "Notable", sans-serif;
+    font-family: "Bangers", cursive;
 }
 
 #main {
@@ -177,9 +171,12 @@ body {
     margin-left: 100px;
     padding: 10px;
     font-size: 25px;
-    font-family: "Acme", sans-serif;
-    background-color: #c72333;
+    font-family: "Calistoga", cursive;
+    font-family: "Notable", sans-serif;
+    font-family: "Bangers", cursive;
     border-radius: 8px;
+    background-color: #c72332;
+    color: #ffffff;
 }
 
 #playAgain {
@@ -272,11 +269,12 @@ body {
         background-image: url("../images/fifth\ .jpeg");
         background-size: cover;
     }
-    .score-card {
-        margin-left: 10px;
-    }
     #main {
-        margin-top: -100px;
+        position: absolute;
+        bottom: 190%;
+        font-size: 20px;
+        width: 200px;
+        margin-left: 40px;
     }
     #startQuizBtn {
         margin-left: 50px;
@@ -287,7 +285,21 @@ body {
     #target {
         margin-left: -10px;
         margin-left: 100px;
-        color: #ffffff;
+        color: black;
+    }
+    #header {
+        font-size: 60px;
+        letter-spacing: 0px;
+    }
+    .score-card {
+        width: 150px;
+        float: left;
+    }
+    #footer {
+        display: none;
+    }
+    #quiz-wrapper {
+        height: auto;
     }
 }
 
@@ -300,7 +312,7 @@ body {
         margin-left: -140px;
     }
     #target {
-        margin-left: -58px;
+        margin-left: -110px;
         color: black;
     }
     #header {
@@ -313,42 +325,26 @@ body {
     }
     #quiz-wrapper {
         width: 425px;
-        margin-left: -80px;
+        margin-left: -100px;
     }
     #footer {
         display: none;
     }
     #button {
-        width: 10px;
+        margin-left: 30px;
     }
     #main {
+        position: relative;
         font-size: 20px;
-        margin-left: 60px;
+        margin-left: 10px;
+        top: 10%;
+        margin-left: 40px;
     }
-}
-
-@media screen and (max-width: 320px) {
-    #startQuizBtn {
-        margin-left: -80px;
-        width: 275px;
-        font-size: 18px;
+    .score-card {
+        margin-right: border: 10px solid black;
+        width: 200px;
     }
-    #footer {
-        display: none;
-    }
-    #quiz-wrapper {
-        margin-top: 65px;
-        width: 315px;
-        margin-left: -55px;
-        height: auto;
-    }
-    #main {
-        position: absolute;
-        top: 65%;
-        margin-left: 20px;
-    }
-    #header {
-        font-size: 40px;
-        letter-spacing: 0px;
+    #playAgain {
+        margin-left: 40px;
     }
 }
