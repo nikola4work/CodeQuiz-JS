@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <!--MAIN CONTAINER-->
     <div class="container" id="content">
         <!--USER INSTRUCTIONS DIV-->
@@ -31,10 +32,11 @@
                     <button class="toggle">Quiz Instructions</button>
                     <div id="target">
                         <ul>
-                            <li>Click RED button to start the countdown</li>
+                            <li>Volume up </li>
+                            <li>Click "Start the quiz" --> button to start the game</li>
                             <li>User have 30 seconds to answer all the questions</li>
                             <li>You can track your score while playing</li>
-                            <li>Click on "Play Again - Start quiz" button to play again</li>
+                            <li>Click on "Play Again - Start quiz" --> to play again</li>
                         </ul>
                     </div>
                     <!--END OF HIDEN DIV-->
@@ -54,6 +56,7 @@
         START THE QUIZ
       </button>
 
+
         <!--WRAPPER-->
         <div class="container" id="quiz-wrapper">
             <!--Questions stored-->
@@ -61,12 +64,14 @@
 
             <!--Option buttons-->
             <div class="options">
+
                 <ul id="ul">
                     <li id="op1" onclick="button(this)"></li>
                     <li id="op2" onclick="button(this)"></li>
                     <li id="op3" onclick="button(this)"></li>
                     <li id="op4" onclick="button(this)"></li>
                 </ul>
+
             </div>
 
             <!--Score, timer, next,play again-->
@@ -116,6 +121,8 @@
         </div>
         <!--END OF MAIN CONTAINER-->
 
+
+        <audio id="audio" src="./assets/images/Mr (mp3cut.net).mp3" autoplay="autoplay" loop="loop"></audio>
 
         <!--JS LINK-->
         <script src="./assets/JS/main.js"></script>

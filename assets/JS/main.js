@@ -83,6 +83,7 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
+            audio.style.display = "none";
         }
     },
     next: function() {
@@ -148,7 +149,7 @@ $(".btn").click(function() {
 // TIMMER BUTTON
 
 $("#startQuizBtn").click(function() {
-    var counter = 30000;
+    var counter = 30;
     var myInterval = setInterval(function() {
         counter--;
         if (isQuizDone) {
@@ -176,3 +177,5 @@ $("#startQuizBtn").click(function() {
 function playAgain() {
     location.reload();
 }
+
+// BUTTON SOUND
