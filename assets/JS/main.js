@@ -83,7 +83,7 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
-            audio.style.display = "none";
+
         }
     },
     next: function() {
@@ -144,6 +144,7 @@ $(".toggle").click(function() {
 $(".btn").click(function() {
     $("#quiz-wrapper").toggle("medium");
     startQuizBtn.style.display = "none";
+    togle.style.display = "none";
 });
 
 // TIMMER BUTTON
@@ -168,6 +169,7 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
+
         }
     }, 1000);
 });
@@ -176,6 +178,14 @@ $("#startQuizBtn").click(function() {
 
 function playAgain() {
     location.reload();
+
+
 }
 
-// BUTTON SOUND
+// THEME SONG
+
+var x = document.getElementById("myAudio");
+
+function play() {
+    x.play();
+}

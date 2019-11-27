@@ -150,7 +150,6 @@ body {
 }
 
 #quiz-wrapper .score-card {
-    color: red;
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
@@ -161,10 +160,10 @@ body {
     border-radius: 8px;
     color: #ffffff;
     text-align: center;
-    color: white;
     font-family: "Calistoga", cursive;
     font-family: "Notable", sans-serif;
     font-family: "Bangers", cursive;
+    width: 190px;
 }
 
 #main {

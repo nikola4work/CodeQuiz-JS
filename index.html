@@ -23,20 +23,27 @@
 
 <body>
 
+    <audio id="myAudio">
+        <source src="./assets/images/Ghostbusters theme (instrumental) (mp3cut.net).mp3" type="audio/ogg">
+    </audio>
+
+
+
+
     <!--MAIN CONTAINER-->
     <div class="container" id="content">
         <!--USER INSTRUCTIONS DIV-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <button class="toggle">Quiz Instructions</button>
+                    <button class="toggle" id="togle">Quiz Instructions</button>
                     <div id="target">
                         <ul>
-                            <li>Volume up </li>
+                            <li>Volume up - Ghostbusters Theme song </li>
                             <li>Click "Start the quiz" --> button to start the game</li>
                             <li>User have 30 seconds to answer all the questions</li>
                             <li>You can track your score while playing</li>
-                            <li>Click on "Play Again - Start quiz" --> to play again</li>
+                            <li>To play again --> Click on "Play Again - Start quiz" button</li>
                         </ul>
                     </div>
                     <!--END OF HIDEN DIV-->
@@ -52,7 +59,7 @@
         <!--END OF TITLE-->
 
         <!--button to start-->
-        <button type="button" class="btn btn-danger btn-lg btn-block" id="startQuizBtn">
+        <button onclick="play()" type="button" class="btn btn-danger btn-lg btn-block" id="startQuizBtn">
         START THE QUIZ
       </button>
 
