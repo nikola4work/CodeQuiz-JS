@@ -22,13 +22,12 @@
 </head>
 
 <body>
-
     <audio id="myAudio">
-        <source src="./assets/images/Ghostbusters theme (instrumental) (mp3cut.net).mp3" type="audio/ogg">
+      <source
+        src="./assets/images/Ghostbusters theme (instrumental) (mp3cut.net).mp3"
+        type="audio/ogg"
+      />
     </audio>
-
-
-
 
     <!--MAIN CONTAINER-->
     <div class="container" id="content">
@@ -39,11 +38,13 @@
                     <button class="toggle" id="togle">Quiz Instructions</button>
                     <div id="target">
                         <ul>
-                            <li>Volume up - Ghostbusters Theme song </li>
+                            <li>Volume up - Ghostbusters Theme song</li>
                             <li>Click "Start the quiz" --> button to start the game</li>
                             <li>User have 30 seconds to answer all the questions</li>
                             <li>You can track your score while playing</li>
-                            <li>To play again --> Click on "Play Again - Start quiz" button</li>
+                            <li>
+                                To play again --> Click on "Play Again - Start quiz" button
+                            </li>
                         </ul>
                     </div>
                     <!--END OF HIDEN DIV-->
@@ -63,7 +64,6 @@
         START THE QUIZ
       </button>
 
-
         <!--WRAPPER-->
         <div class="container" id="quiz-wrapper">
             <!--Questions stored-->
@@ -71,14 +71,12 @@
 
             <!--Option buttons-->
             <div class="options">
-
                 <ul id="ul">
                     <li id="op1" onclick="button(this)"></li>
                     <li id="op2" onclick="button(this)"></li>
                     <li id="op3" onclick="button(this)"></li>
                     <li id="op4" onclick="button(this)"></li>
                 </ul>
-
             </div>
 
             <!--Score, timer, next,play again-->
@@ -98,7 +96,6 @@
                     </div>
 
                     <div class="row">
-
                         <div class="col-md-12">
                             <button id="playAgain" onclick="playAgain()">Play Again</button>
                         </div>
@@ -126,13 +123,11 @@
                 </div>
             </div>
         </div>
-        <!--END OF MAIN CONTAINER-->
+    </div>
+    <!--END OF MAIN CONTAINER-->
 
-
-
-
-        <!--JS LINK-->
-        <script src="./assets/JS/main.js"></script>
+    <!--JS LINK-->
+    <script src="./assets/JS/main.js"></script>
 </body>
 
 </html>
