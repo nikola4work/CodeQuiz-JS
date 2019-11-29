@@ -83,7 +83,7 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
-            x.stop;
+            footer.style.display = "none";
         }
     },
     next: function() {
@@ -169,6 +169,7 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
+            footer.style.display = "none";
         }
     }, 1000);
 });
