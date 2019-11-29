@@ -35,7 +35,7 @@ var app = {
         },
 
         {
-            q: " What does CSS stands for?",
+            q: "What does CSS stands for?",
             options: [
                 "cascading style sheets",
                 "cascading style source",
@@ -83,7 +83,7 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
-
+            x.stop;
         }
     },
     next: function() {
@@ -169,7 +169,6 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
-
         }
     }, 1000);
 });
@@ -178,8 +177,6 @@ $("#startQuizBtn").click(function() {
 
 function playAgain() {
     location.reload();
-
-
 }
 
 // THEME SONG
