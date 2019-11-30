@@ -24,9 +24,9 @@ CodeQuiz is a small quiz game that runs mostly on JavaScript. It contains six qu
 ## Screenshots
 
 
-<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme%20img%201.png" height="250" width="450">
+<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme1.png" height="250" width="450">
 
-<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme%20img%202.png" height="250" width="450">
+<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme2.png" height="250" width="450">
 
 
 ## Setup/Installation Requirements
