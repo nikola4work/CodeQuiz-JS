@@ -83,7 +83,7 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
-
+            x.pause();
         }
     },
     next: function() {
@@ -146,7 +146,6 @@ $(".btn").click(function() {
     startQuizBtn.style.display = "none";
     togle.style.display = "none";
     target.style.display = "none";
-
 });
 
 // TIMMER BUTTON
@@ -171,7 +170,7 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
-
+            x.pause();
         }
     }, 1000);
 });
