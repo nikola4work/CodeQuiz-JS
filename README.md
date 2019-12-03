@@ -30,11 +30,6 @@ CodeQuiz is a small quiz game that runs mostly on JavaScript. It contains six qu
 <img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme2.png" height="250" width="450">
 
 
-## Video
-
-I apologize for the quality
-
-
 
 
 ## Setup/Installation Requirements
@@ -63,9 +58,3 @@ JQuery-few lines of code
 ### License
 
 Copyright(c) 2019 By Nikola Jovanovic
-
-
-
-
-
-
