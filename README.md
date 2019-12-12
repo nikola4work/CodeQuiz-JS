@@ -17,7 +17,7 @@ CodeQuiz is a small quiz game that runs mostly on JavaScript. It contains six qu
 * Quiz theme song will start to play once user clicks START THE QUIZ button.
 * Once selecting an answer, user will see the message correct or wrong, and the score will be displayed.
 * User can skip the question and move on to the next one using the NEXT button.
-* Once the user has answered all the questions, it will be presented with the final score.
+* Once the user has answered all the questions, alert box will ask user to enter name and display final score.
 * User then have an option restarting the questions by clicking PLAY AGAIN-->START THE QUIZ button.
 * Different background image when the user resizes the browser window.
 
