@@ -7,6 +7,7 @@ var op2 = document.getElementById("op2");
 var op3 = document.getElementById("op3");
 var op4 = document.getElementById("op4");
 var mainEl = document.getElementById("main");
+var myInput = document.getElementById("myInput");
 
 var isQuizDone = false;
 
@@ -83,6 +84,12 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
+            header.style.display = "none";
+            var name = prompt("Enter your name!");
+
+            myInput.innerText =
+                "Hello " + name + " ! " + " - " + "Final Score: " + this.score;
+
             x.pause();
         }
     },
@@ -101,6 +108,11 @@ var app = {
         } else {
             ele.className = "wrong";
             ele.innerHTML = "Wrong";
+            if (counter > 5) {
+                counter = counter - 5;
+            } else {
+                counter = 0;
+            }
         }
     },
     notClickAble: function() {
@@ -149,9 +161,8 @@ $(".btn").click(function() {
 });
 
 // TIMMER BUTTON
-
+var counter = 30;
 $("#startQuizBtn").click(function() {
-    var counter = 30;
     var myInterval = setInterval(function() {
         counter--;
         if (isQuizDone) {
@@ -170,6 +181,7 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
+
             x.pause();
         }
     }, 1000);
