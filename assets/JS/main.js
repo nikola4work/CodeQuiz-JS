@@ -86,7 +86,6 @@ var app = {
             btn.style.display = "none";
             header.style.display = "none";
             var name = prompt("Enter your name!");
-
             myInput.innerText =
                 "Hello " + name + " ! " + " - " + "Final Score: " + this.score;
 
@@ -111,7 +110,7 @@ var app = {
             if (counter > 5) {
                 counter = counter - 5;
             } else {
-                counter = 0;
+                counter === 0;
             }
         }
     },
@@ -181,6 +180,10 @@ $("#startQuizBtn").click(function() {
             op4.style.display = "none";
             btn.style.display = "none";
             startQuizBtn.style.display = "none";
+
+            var name = prompt("Enter your name!");
+            myInput.innerText =
+                "Hello " + name + " ! " + " - " + "Final Score: " + this.score;
 
             x.pause();
         }
