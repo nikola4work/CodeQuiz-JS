@@ -84,12 +84,11 @@ var app = {
             op3.style.display = "none";
             op4.style.display = "none";
             btn.style.display = "none";
+            x.pause();
             header.style.display = "none";
             var name = prompt("Enter your name!");
             myInput.innerText =
                 "Hello " + name + " ! " + " - " + "Final Score: " + this.score;
-
-            x.pause();
         }
     },
     next: function() {
