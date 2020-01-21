@@ -23,20 +23,17 @@ CodeQuiz is a small quiz game that runs mostly on JavaScript. It contains six qu
 * Different background image when the user resizes the browser window.
 
 
-## Screenshots
+## Live Preview
 
 
-<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme1.png" height="250" width="450">
-
-<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/assets/images/readme2.png" height="250" width="450">
-
+<img src="https://github.com/nikola4work/CodeQuiz-JS/blob/master/gif.gif">
 
 
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your local machine if you wish to edit
-* For live preview navigate to the https://nikola4work.github.io/CodeQuiz-JS/ 
+* Direct link to the site https://nikola4work.github.io/CodeQuiz-JS/ 
 
 
 
